@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".updateActivity">
+
+    <FrameLayout
+        android:id="@+id/idFrameHeader"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/idButtonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/idTextHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins"
+            android:paddingHorizontal="5dp"
+            android:text="Update Note"
+            android:textColor="@color/material_dynamic_primary30"
+            android:textStyle="bold"
+            android:textSize="24dp" />
+
+        <ImageView
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/idTextHeading"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/baseline_done_24"
+            android:id="@+id/idEditSaveNote"
+            />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/idEditTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter title"
+        android:layout_below="@+id/idFrameHeader"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins"
+        />
+
+    <EditText
+        android:id="@+id/idEditContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/idEditTitle"
+        android:hint="Enter description note"
+        android:background="@drawable/orange_border"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="20dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins"
+        />
+
+</RelativeLayout>
